@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/voteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/voteLabel"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+  <LinearLayout
+        android:id="@+id/display_upload_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="4dp">  
+
+    <ImageButton
+
+        android:id="@+id/noVoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/noVote"
+        android:src="@drawable/thumb_down" />
+
+    <ImageButton
+
+        android:id="@+id/yesVoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/yesVote"
+        android:src="@drawable/thumb_up" />
+  
+    </LinearLayout> 
+</LinearLayout>

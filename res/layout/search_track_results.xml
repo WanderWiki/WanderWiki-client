@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"
+    android:padding="10dp"> 
+      
+    <FrameLayout 
+        android:layout_weight="1" 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip" > 
+  
+        <ListView 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"
+            android:id="@+id/listview"/> 
+          
+    </FrameLayout> 
+      
+    <Button
+        android:id="@+id/download_helping_button"
+        style="@style/home_big_button"
+        android:layout_marginTop="30dp"
+        android:layout_height="60dp"
+        android:text="@string/download_this_track"/> 
+              
+</LinearLayout>

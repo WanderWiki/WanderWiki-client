@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8'?>
+ 
+<!--
+__________________________________________________________________________________________________________________________________________________
+                |
+  File name     |       values-fr/strings.xml
+________________|_________________________________________________________________________________________________________________________________
+                |   
+                |       This file is part of WanderWiki project.
+  Licence       |
+                |       WanderWiki project is free software: you can redistribute it and/or modify
+                |       it under the terms of the GNU General Public License as published by
+                |       the Free Software Foundation, either version 3 of the License, or
+                |       (at your option) any later version.
+                |
+                |       WanderWiki is distributed in the hope that it will be useful,
+                |       but WITHOUT ANY WARRANTY; without even the implied warranty of
+                |       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                |       GNU General Public License for more details.
+                |
+                |       You should have received a copy of the GNU General Public License
+                |       along with WanderWiki.  If not, see <http://www.gnu.org/licenses/>.
+________________|___________________________________________________________________________________________________________________________
+                |
+  Created by    |       OSMTracker
+________________|_________________________________________________________________________________________________________
+                |
+  Comments      |       This file contains strings in French
+                |       
+________________|__________________________________________________________________________________________________________________________
+                                    |                           |                           |
+        Modification name           |   Date of the modfication |       Modified by         |       Comments
+____________________________________|___________________________|___________________________|________________________________________________
+                                    |   From october 2013 to    |                           |
+Add of strings                      |   january 2014            |       Florent, Ayoub      |
+____________________________________|___________________________|___________________________|________________________________________________
+                                    |                           |                           |
+Translation Messages                |       13/01/14            |       Florent             |
+____________________________________|___________________________|___________________________|________________________________________________
+ 
+-->
+ 
+<resources>
+  <!--Generic strings-->
+  <string name="app_name">WanderWiki</string>
+  <string name="app_short_name">WanderWiki</string>
+  <string name="app_description">A définir</string>
+   
+  <!--TrackLogger-->
+  <string name="tracklogger">Enregistrement</string>
+  <string name="tracklogger_waiting_gps">En attente de fix GPS pour activer les boutons…</string>
+  <string name="tracklogger_voicerec_title">Enregistrement vocal</string>
+  <string name="tracklogger_voicerec_text">Enregistrement d\'un mémo de {0}s.</string>
+  <string name="tracklogger_voicerec_stop">Arrêter</string>
+  <string name="tracklogger_btnBack">Retour</string>
+  <string name="tracklogger_tracked">Taggué : </string>
+  <string name="tracklogger_gps_disabled">GPS désactivé</string>
+  <string name="tracklogger_gps_disabled_hint">Le GPS est désactivé. Voulez-vous l\'activer ?</string>
+   
+  <!--Waypoint List-->
+  <string name="wplist">Liste des points d\'interêt</string>
+  <string name="wplist_latitude">Lat: </string>
+  <string name="wplist_longitude">Long: </string>
+  <string name="wplist_elevation">Alt: </string>
+  <string name="wplist_accuracy">Préci: </string>
+  
+  <!--Track Manager-->
+  <string name="trackmgr">Gestionnaire de traces</string>
+  <string name="trackmgr_tracklist">Liste des traces :</string>
+  <string name="trackmgr_waypoints_count">Points d\'interêt :</string>
+  <string name="trackmgr_trackpoints_count">Pts. de trace :</string>
+  <string name="trackmgr_empty">Vous n\'avez pas de traces.</string>
+  <string name="trackmgr_newtrack_hint">Pour enregistrer une trace,\nchoisissez <b>Menu</b>, puis <b>Nouvelle trace</b>.</string>
+  <string name="trackmgr_newtrack_error">Impossible de créer une nouvelle trace : {0}</string>
+  <string name="trackmgr_continuetrack_hint">La <b>trace #{0}</b> est en cours d\'enregistrement.\nChoisissez la dans la liste pour continuer.</string>
+  <string name="trackmgr_contextmenu_stop">Arrêter l\'enregistrement</string>
+  <string name="trackmgr_contextmenu_resume">Reprendre l\'enregistrement</string>
+  <string name="trackmgr_contextmenu_delete">Supprimer</string>
+  <string name="trackmgr_contextmenu_export">Exporter (GPX)</string>
+  <string name="trackmgr_contextmenu_osm_upload">Uploader vers OpenStreetMap</string>
+  <string name="trackmgr_contextmenu_display">Afficher</string>
+  <string name="trackmgr_contextmenu_details">Détails</string>
+  <string name="trackmgr_contextmenu_title">Trace #{0}</string>
+  <string name="trackmgr_delete_confirm">La trace #{0} sera supprimée.</string>
+  <string name="trackmgr_deleteall_confirm">Toutes les traces seront supprimées. Êtes-vous sûr ?</string>
+  <string name="trackmgr_exporting">Export de la trace #{0} en cours…</string>
+  <string name="trackmgr_export_error">Impossible d\'exporter la trace : {0}</string>
+  <string name="trackmgr_exportall_confirm">Toutes les traces vont être exportées, cela peut prendre du temps. Êtes-vous sûr ?</string>
+   
+  <!--Track Detail-->
+  <string name="trackdetail">Détails de la trace</string>
+  <string name="trackdetail_startdate">Date et heure de début : </string>
+  <string name="trackdetail_enddate">Date et heure de fin : </string>
+  <string name="trackdetail_startloc">Commence à : </string>
+  <string name="trackdetail_endloc">Se termine à : </string>
+  <string name="trackdetail_exportdate">Date et heure d\'export : </string>
+  <string name="trackdetail_osm_upload_date">Uploadé vers OpenStreetMap:</string>
+  <string name="trackdetail_btn_export">Exporter en GPX</string>
+  <string name="trackdetail_export_notyet">(Pas encore exporté)</string>
+  <string name="trackdetail_osm_upload_notyet">(Pas encore uploadé)</string>
+  <string name="trackdetail_export_display">Afficher</string>
+  <string name="trackdetail_description">Description</string>
+  <string name="trackdetail_tags">Tags (séparés par des virgules)</string>
+  <string name="trackdetail_description_mandatory">La description est obligatoire</string>
+  <string name="osm_visibility_private">Privé</string>
+  <string name="osm_visibility_public">Publique</string>
+  <string name="osm_visibility_trackable">Traçable</string>
+  <string name="osm_visibility_identifiable">Identifiable</string>
+  
+  <!--OSM upload-->
+  <string name="osm_upload">Upload OpenStreetMap</string>
+  <string name="osm_upload_ok">Sauvegarder et uploader</string>
+  <string name="osm_upload_tmpfile_failed">Erreur lors de l\'export vers un fichier temporaire</string>
+  <string name="osm_upload_oauth_failed">Erreur d\'authentification à OpenStreetMap</string>
+  <string name="osm_upload_sending">Envoi de la trace #{0}…</string>
+  <string name="osm_upload_waiting_response">Attente de la réponse du serveur…</string>
+  <string name="osm_upload_error">Erreur lors de l\'upload</string>
+  <string name="osm_upload_bad_response">Le serveur OSM à retourné une erreur ({0} message {1})</string>
+  <string name="osm_upload_unauthorized">Erreur d\'authentification. Voulez-vouz supprimer les données d\'authentifications et vous re-connecter ?</string>
+  <string name="osm_upload_sucess">Upload vers OpenStreetMap complété avec succès</string>
+   
+  <!--GPS Status & record bar-->
+  <string name="gpsstatus_record_voicerec">Mémo vocal</string>
+  <string name="gpsstatus_record_stillimage">Photographier</string>
+  <string name="gpsstatus_record_textnote">Note</string>
+   
+  <!--Menu-->
+  <string name="menu_settings">Paramètres</string>
+  <string name="menu_waypointlist">Points d\'interêt</string>
+  <string name="menu_about">À propos</string>
+  <string name="menu_displaytrack">Afficher la trace</string>
+  <string name="menu_stoptracking">Arrêter &amp; Enregistrer</string>
+  <string name="menu_newtrack">Nouvelle trace</string>
+  <string name="menu_deletetracks">Supprimer tout</string>
+  <string name="menu_continue">Continuer la trace</string>
+  <string name="menu_stopcurrenttrack">Stopper la trace active</string>
+  <string name="menu_save">Sauvegarder</string>
+  <string name="menu_cancel">Annuler</string>
+  <string name="menu_export">Exporter en GPX</string>
+  <string name="menu_osm_upload">Upload OpenStreetMap</string>
+  <string name="menu_center_to_gps">Centrer sur le GPS</string>
+  <string name="menu_exportall">Exporter toutes les traces en GPX</string>
+    
+  <!--Errors-->
+  <string name="error_externalstorage_not_writable">Impossible d\'écrire dans le stockage externe.</string>
+  <string name="error_create_track_dir">Erreur de création du dossier %s</string>
+  <string name="error_externalstorage_not_writable_hint">Veuillez vérifier que le stockage est correctement inséré et monté.</string>
+  <string name="error_voicerec_failed">L\'enregistrement vocal a échoué.</string>
+  <string name="error_userlayout_parsing">Erreur dans la définition des boutons. Veuillez revenir aux boutons par défaut.</string>
+    
+  <!--GPX-->
+  <string name="gpx_track_name">Traces enregistrées avec WanderWiki</string>
+  <string name="gpx_hdop_approximation_cmt">Attention : les valeurs HDOP ne sont pas celles retournées par le GPS, mais approximées a partir de la précision en mètres. Elles ne sont donc pas très fiables.</string>
+    
+  <!--About screen-->
+  <string name="about">À propos</string>
+  <string name="about_text">Pour plus d\'informations, documentation et bugs, veuillez visiter la page du projet :</string>
+  <string name="about_contact_text">Pour nous contacter :</string>
+  <string name="about_debug_info">Info de débogage</string>
+    
+  <!--Notification-->
+  <string name="notification_ticker_text">WanderWiki est en cours d\'éxécution</string>
+  <string name="notification_title">WanderWiki est en cours d\'éxécution</string>
+  <string name="notification_text">Taper ici pour afficher l\'écran principal</string>
+   
+  <!--Display track-->
+  <string name="displaytrack">Afficher le parcours</string>
+  <string name="displaytrack_north">N</string>
+   
+  <!--Track detail-->
+  <string name="trackdetail_save">Enregistrer</string>
+  
+  <!--Various-->
+  <string name="various_unit_meters">m</string>
+  <string name="various_accuracy">Précision</string>
+  <string name="various_waiting_gps_fix">En attente de fix GPS…</string>
+   
+  <!--OSM map view-->
+  <string name="displaytrackmap">Voir le tracé avec OpenStreetMap</string>
+       
+      <!--  display_track_detail -->
+    <string name="track_name"><u>Le nom du parcours : </u></string>
+    <string name="author"><u>Crée par : </u></string>
+    <string name="date"><u>Date : </u></string>
+    <string name="length"><u>Longueur : </u></string>
+    <string name="number_download"><u>Nombre de télechargements : </u></string>
+    <string name="tags"><u>Tags : </u></string>
+    <string name="display">Afficher</string>
+    <string name="upload">Partager</string>
+    <string name="resume">Continuer le tracé</string>
+    <string name="yesVote">Oui!</string>
+    <string name="noVote">Non!</string>
+    <string name="downloadTrack">Télecharger le parcours</string>
+    <string name="trackName">Nom du parcours</string>
+    <string name="pseudonym">Pseudo</string>
+    <string name="trackTags">Tags du parcours</string>
+    <string name="voteLabel">Vous avez aimé le parcours? </string>
+        
+    <!--  Search_track -->
+    <string name="download_this_track">Télecharger ce parcours</string>
+        
+       <!--Search track-->
+    <string name="download_track">Télecharger ce parcours</string>
+    <string name="search">Chercher</string>
+    <string name="track">Parcours</string>
+    <string name="keywords">Mots-clés</string>
+    <string name="advanced_research">Recherche avancée</string>
+    <string name="searching_tracks">Recherche en cours</string>
+     
+    <!--  Advanced research -->
+    <string name="search_creator"><u>Nom du créateur :</u></string>
+    <string name="length_min">Longueur : Min </string>
+    <string name="length_max">Longueur maximale</string>  
+    <string name="max">Max</string>        
+    <string name="start_my_position">  Commencer près de ma position </string>
+    <string name="arrive_my_position">  Arriver près de ma position</string>    
+    <string name="duration_min">Durée : Min </string>
+        
+    <!-- Home -->
+    <string name="search_button">Chercher \nun parcours</string>
+    <string name="creation_button">Créer et \npartager \nun parcours</string>    
+    <string name="downloaded_tracks_button">Liste des parcours \n téléchargés ou créés</string>
+    <string name="back_to_navigation_button">Retour à la navigation</string>
+    <string name="checking_gmail">Verification du compte Gmail</string> 
+    <string name="creating_acount">Inscription en cours</string>    
+     
+    <!-- Messages -->
+    <string name="msg_account_created">Le compte a été créé</string>  
+    <string name="msg_account_checked">Le compte a été vérifié</string>  
+    <string name="msg_error_server">Le serveur a rencontré à un problème</string> 
+    <string name="msg_download_success">Téléchargement du parcours terminé</string>     
+    <string name="msg_no_track_found">Aucun parcours n\'a été trouvé</string>           
+    <string name="msg_upload_success">Téléversement du fichier terminé</string>             
+    <string name="null_value">0</string>    
+    <string name="msg_error_dir_creation">Problème de création de dossier wanderwiki</string>
+    <string name="msg_error_no_connection">Pas de connexion internet</string>
+    <string name="msg_connection_enabled">Connexion internet detectée</string>
+	<string name="msg_downloading_file">Télechargement du fichier</string>
+</resources>

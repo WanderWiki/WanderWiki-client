@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!--   
+__________________________________________________________________________________________________________________________________________________ 
+                | 
+  File name     |       advanced_researchxml 
+________________|_________________________________________________________________________________________________________________________________ 
+                |    
+                |       This file is part of WanderWiki project. 
+  Licence       | 
+                |       WanderWiki project is free software: you can redistribute it and/or modify 
+                |       it under the terms of the GNU General Public License as published by 
+                |       the Free Software Foundation, either version 3 of the License, or 
+                |       (at your option) any later version. 
+                | 
+                |       WanderWiki is distributed in the hope that it will be useful, 
+                |       but WITHOUT ANY WARRANTY; without even the implied warranty of 
+                |       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+                |       GNU General Public License for more details. 
+                | 
+                |       You should have received a copy of the GNU General Public License 
+                |       along with WanderWiki.  If not, see <http://www.gnu.org/licenses/>. 
+________________|___________________________________________________________________________________________________________________________ 
+                | 
+  Created by    |       Florent 
+________________|_________________________________________________________________________________________________________ 
+                | 
+  Comments      |         
+                |       For now, this layout is not used, but it will be when the function of advanced will be done. 
+________________|__________________________________________________________________________________________________________________________ 
+                                    |                           |                           | 
+        Modification name           |   Date of the modfication |       Modified by         |       Comments 
+____________________________________|___________________________|___________________________|________________________________________________ 
+                                    |                           |                           | 
+                                    |                           |                           | 
+____________________________________|___________________________|___________________________|________________________________________________ 
+  
+ -->
+  
+    
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="12dp">   
+    
+    <TextView
+        android:id="@+id/creator"
+        style="@style/advanced_research_textview"
+        android:layout_alignBottom="@+id/search_creator"
+        android:text="@string/search_creator"/>  
+        
+    <EditText
+        android:id="@+id/search_creator"
+        style="@style/advanced_research_edittext"
+        android:layout_toRightOf="@id/creator"/>  
+        
+    <TextView
+        android:id="@+id/keywords"
+        style="@style/advanced_research_textview"
+        android:layout_alignBottom="@+id/search_keywords"
+        android:text="@string/keywords"/>  
+        
+    <EditText
+        android:id="@+id/search_keywords"
+        style="@style/advanced_research_edittext"
+        android:layout_below="@id/search_creator"
+        android:layout_toRightOf="@id/keywords"/>      
+            
+     <TextView
+        android:id="@+id/length"
+        style="@style/advanced_research_textview"
+        android:layout_alignBottom="@+id/search_track_length_min"
+        android:text="@string/length_min"/>     
+    
+    <EditText
+        android:id="@+id/search_track_length_min"
+        style="@style/advanced_research_edittext"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/search_keywords"
+        android:layout_toRightOf="@id/length"
+        android:digits="1234567890"
+        android:ems="2"
+        android:inputType="number" />
+            
+    <TextView
+        android:id="@+id/length_max"
+        style="@style/advanced_research_textview"
+        android:layout_alignBottom="@+id/search_track_length_min"
+        android:layout_toRightOf="@id/search_track_length_min"
+        android:text="@string/max"/>     
+            
+    <EditText
+        android:id="@+id/max"
+        style="@style/advanced_research_edittext"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@id/search_track_length_min"
+        android:layout_toRightOf="@id/length_max"
+        android:layout_alignParentRight="true"
+        android:ems="2"        
+        android:inputType="number"
+        android:digits="1234567890"/>      
+          
+     <TextView
+        android:id="@+id/duration"
+        style="@style/advanced_research_textview"
+        android:layout_alignBottom="@+id/search_track_duration_min"
+        android:text="@string/duration_min"/>     
+    
+    <EditText
+        android:id="@+id/search_track_duration_min"
+        style="@style/advanced_research_edittext"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/length"
+        android:layout_toRightOf="@id/duration"
+        android:digits="1234567890"
+        android:ems="2"
+        android:inputType="number" />
+            
+    <TextView
+        android:id="@+id/search_track_duration_max"
+        style="@style/advanced_research_textview"
+        android:layout_alignBottom="@+id/search_track_duration_min"
+        android:layout_toRightOf="@id/search_track_duration_min"
+        android:text="@string/max"/>     
+            
+    <EditText
+        android:id="@+id/max_d"
+        style="@style/advanced_research_edittext"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@id/search_track_duration_min"
+        android:layout_toRightOf="@id/search_track_duration_max"
+        android:layout_alignParentRight="true"
+        android:ems="2"        
+        android:inputType="number"
+        android:digits="1234567890"/>       
+      
+            
+    <CheckBox
+        android:id="@+id/start_my_position"
+        style="@style/advanced_research_textview"
+        android:layout_below="@id/max_d"
+        android:text="@string/start_my_position"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>   
+            
+    <CheckBox
+        android:id="@+id/arrive_my_position"
+        style="@style/advanced_research_textview"
+        android:layout_below="@id/start_my_position"
+        android:text="@string/arrive_my_position"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>      
+            
+    <Button
+        android:id="@+id/search_button"
+        style="@style/home_big_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="50dp"
+        android:text="@string/search" />       
+            
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="12dp" >  
+    
+     
+    <!--  Styles (textsize, width, height for textviews are defined in style.xml -->
+            
+    <TextView
+        android:id="@+id/displaytrackdetail_trackNameView"
+        style="@style/track_details_textview"
+        android:layout_alignParentTop="true"
+        android:text="@string/track_name" />  
+    
+    <TextView
+        android:id="@+id/displaytrackdetail_authorView"
+        style="@style/track_details_textview"
+        android:layout_below="@id/displaytrackdetail_trackNameView"
+        android:text="@string/author" />  
+    
+    <TextView
+        android:id="@+id/displaytrackdetail_dateView"
+        style="@style/track_details_textview"
+        android:layout_below="@id/displaytrackdetail_authorView"
+        android:text="@string/date" />  
+        
+    <TextView
+        android:id="@+id/displaytrackdetail_lengthView"
+        style="@style/track_details_textview"
+        android:layout_below="@id/displaytrackdetail_dateView"
+        android:text="@string/length" />  
+        
+    <TextView
+        android:id="@+id/displaytrackdetail_descriptionView"
+        style="@style/track_details_textview"
+        android:layout_below="@id/displaytrackdetail_lengthView"
+        android:layout_marginBottom="100dp"
+        android:text="@string/tags" /> 
+        
+    <LinearLayout
+        android:id="@+id/display_upload_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="4dp"
+        android:layout_below="@id/displaytrackdetail_descriptionView">   
+        
+        <Button
+            android:id="@+id/displaytrackdetail_display_button"
+            style="@style/home_big_button"
+            android:layout_marginRight="4dp"
+            android:layout_weight="50"
+            android:layout_height="150dp"
+            android:text="@string/display" />  
+            
+        <Button
+            android:id="@+id/displaytrackdetail_upload_button"
+            style="@style/home_big_button"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="50"
+            android:text="@string/upload" />  
+    
+    </LinearLayout>  
+      
+</RelativeLayout>

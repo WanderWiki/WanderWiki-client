@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?> 
+  
+<!--   
+__________________________________________________________________________________________________________________________________________________ 
+                | 
+  File name     |       search_track.xml 
+________________|_________________________________________________________________________________________________________________________________ 
+                |    
+                |       This file is part of WanderWiki project. 
+  Licence       | 
+                |       WanderWiki project is free software: you can redistribute it and/or modify 
+                |       it under the terms of the GNU General Public License as published by 
+                |       the Free Software Foundation, either version 3 of the License, or 
+                |       (at your option) any later version. 
+                | 
+                |       WanderWiki is distributed in the hope that it will be useful, 
+                |       but WITHOUT ANY WARRANTY; without even the implied warranty of 
+                |       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+                |       GNU General Public License for more details. 
+                | 
+                |       You should have received a copy of the GNU General Public License 
+                |       along with WanderWiki.  If not, see <http://www.gnu.org/licenses/>. 
+________________|___________________________________________________________________________________________________________________________ 
+                | 
+  Created by    |       Florent 
+________________|_________________________________________________________________________________________________________ 
+                | 
+  Comments      |        
+                |        
+________________|__________________________________________________________________________________________________________________________ 
+                                    |                           |                           | 
+        Modification name           |   Date of the modfication |       Modified by         |       Comments 
+____________________________________|___________________________|___________________________|________________________________________________ 
+                                    |                           |                           | 
+                                    |                           |                           | 
+____________________________________|___________________________|___________________________|________________________________________________ 
+  
+ -->
+   
+      
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="15dp">   
+      
+    <EditText
+        android:id="@+id/trackName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/keywords" >   
+    <requestFocus />   
+    </EditText> 
+  
+    <TextView
+        android:id="@+id/search_track_length_max_v"
+        style="@style/advanced_research_textview"
+        android:layout_alignLeft="@+id/search_button"
+        android:layout_below="@+id/trackName"
+        android:layout_marginTop="50dp"
+        android:text="@string/length_max" /> 
+  
+    <Button
+        android:id="@+id/search_button"
+        style="@style/home_big_button"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="43dp"
+        android:text="@string/search" /> 
+  
+    <EditText
+        android:id="@+id/search_track_length_max"
+        style="@style/advanced_research_edittext"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@id/search_track_length_max_v"
+        android:layout_toRightOf="@id/search_track_length_max_v"
+        android:digits="1234567890"
+        android:ems="5"
+        android:inputType="number"
+        android:text="@string/null_value" /> 
+            
+</RelativeLayout>

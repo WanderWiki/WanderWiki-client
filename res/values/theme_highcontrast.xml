@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<!--
+__________________________________________________________________________________________________________________________________________________
+                |
+  File name     |       values/theme_highcontrast.xml
+________________|_________________________________________________________________________________________________________________________________
+                |   
+                |       This file is part of WanderWiki project.
+  Licence       |
+                |       WanderWiki project is free software: you can redistribute it and/or modify
+                |       it under the terms of the GNU General Public License as published by
+                |       the Free Software Foundation, either version 3 of the License, or
+                |       (at your option) any later version.
+                |
+                |       WanderWiki is distributed in the hope that it will be useful,
+                |       but WITHOUT ANY WARRANTY; without even the implied warranty of
+                |       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                |       GNU General Public License for more details.
+                |
+                |       You should have received a copy of the GNU General Public License
+                |       along with WanderWiki.  If not, see <http://www.gnu.org/licenses/>.
+________________|___________________________________________________________________________________________________________________________
+                |
+  Created by    |       OSMTracker
+________________|_________________________________________________________________________________________________________
+                |
+  Comments      |       This ressources are not used in WanderWiki
+                |       
+________________|__________________________________________________________________________________________________________________________
+                                    |                           |                           |
+        Modification name           |   Date of the modfication |       Modified by         |       Comments
+____________________________________|___________________________|___________________________|________________________________________________
+                                    |                           |                           |
+                                    |                           |                           |
+____________________________________|___________________________|___________________________|________________________________________________
+ 
+-->
+<resources>
+    <style name="HighContrast" parent="@android:style/Theme">
+        <!-- item name="android:background">#ffffff</item -->
+        <item name="android:buttonStyle">@style/Widget.Button</item>
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+    </style>
+ 
+    <style name="Widget.Button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/theme_highcontrast_btn</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+ 
+    <style name="Widget.Button.Toggle" parent="@android:style/Widget.Button.Toggle">
+            <item name="android:textColor">#ffffff</item>
+    </style>
+ 
+</resources>

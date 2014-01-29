@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+__________________________________________________________________________________________________________________________________________________
+                |
+  File name     |       large/tracklogger.xml
+________________|_________________________________________________________________________________________________________________________________
+                |   
+                |       This file is part of WanderWiki project.
+  Licence       |
+                |       WanderWiki project is free software: you can redistribute it and/or modify
+                |       it under the terms of the GNU General Public License as published by
+                |       the Free Software Foundation, either version 3 of the License, or
+                |       (at your option) any later version.
+                |
+                |       WanderWiki is distributed in the hope that it will be useful,
+                |       but WITHOUT ANY WARRANTY; without even the implied warranty of
+                |       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                |       GNU General Public License for more details.
+                |
+                |       You should have received a copy of the GNU General Public License
+                |       along with WanderWiki.  If not, see <http://www.gnu.org/licenses/>.
+________________|___________________________________________________________________________________________________________________________
+                |
+  Created by    |       OSMTracker
+________________|_________________________________________________________________________________________________________
+                |
+  Comments      |       The linear layout is useless but without it we get an error 
+                |       => tracklogger.java has to be modified
+                |       Large is for 10' tablets                
+________________|__________________________________________________________________________________________________________________________
+                                    |                           |                           |
+        Modification name           |   Date of the modfication |       Modified by         |       Comments
+____________________________________|___________________________|___________________________|________________________________________________
+                                    |                           |                           |
+Add button "DisplayTrack"           |       13/01/2014          |       Florent             |
+____________________________________|___________________________|___________________________|________________________________________________
+ 
+-->
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="8dp" >
+ 
+    <!--  <me.guillaumin.android.osmtracker.layout.GpsStatusRecord
+        android:id="@+id/gpsStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+-->
+ 
+ 
+    <LinearLayout
+        android:id="@+id/tracklogger_root"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+ 
+    <me.guillaumin.android.osmtracker.layout.GpsStatusRecord
+        android:id="@+id/gpsStatus" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+ 
+ 
+   
+    <ImageView
+        android:id="@+id/image_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="1000dp"
+        android:src="@drawable/logo" /> 
+         
+     <Button
+        android:id="@+id/displaytrack"
+        style="@style/home_big_button"
+        android:layout_height="fill_parent"
+        android:text="@string/displaytrack" />    
+   
+           </LinearLayout>

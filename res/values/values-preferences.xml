@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<!--
+__________________________________________________________________________________________________________________________________________________
+                |
+  File name     |       values/values-preferences.xml
+________________|_________________________________________________________________________________________________________________________________
+                |   
+                |       This file is part of WanderWiki project.
+  Licence       |
+                |       WanderWiki project is free software: you can redistribute it and/or modify
+                |       it under the terms of the GNU General Public License as published by
+                |       the Free Software Foundation, either version 3 of the License, or
+                |       (at your option) any later version.
+                |
+                |       WanderWiki is distributed in the hope that it will be useful,
+                |       but WITHOUT ANY WARRANTY; without even the implied warranty of
+                |       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                |       GNU General Public License for more details.
+                |
+                |       You should have received a copy of the GNU General Public License
+                |       along with WanderWiki.  If not, see <http://www.gnu.org/licenses/>.
+________________|___________________________________________________________________________________________________________________________
+                |
+  Created by    |       OSMTracker
+________________|_________________________________________________________________________________________________________
+                |
+  Comments      |       This ressources are not used in WanderWiki
+                |       
+________________|__________________________________________________________________________________________________________________________
+                                    |                           |                           |
+        Modification name           |   Date of the modfication |       Modified by         |       Comments
+____________________________________|___________________________|___________________________|________________________________________________
+                                    |                           |                           |
+                                    |                           |                           |
+____________________________________|___________________________|___________________________|________________________________________________
+ 
+-->
+<resources>
+ 
+    <string-array name="prefs_ui_orientation_options_values">
+        <item>none</item>
+        <item>portrait</item>
+        <item>landscape</item>
+    </string-array>
+ 
+    <string-array name="prefs_voicerec_durations">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+ 
+    <string-array name="prefs_theme_values">
+        <item>me.guillaumin.android.osmtracker:style/DefaultTheme</item>
+        <item>me.guillaumin.android.osmtracker:style/DarkTheme</item>
+        <item>me.guillaumin.android.osmtracker:style/LightTheme</item>
+        <item>me.guillaumin.android.osmtracker:style/HighContrast</item>
+    </string-array>
+ 
+    <string-array name="prefs_output_filename_values">
+        <item>name</item>
+        <item>name_date</item>
+        <item>date</item>
+    </string-array>
+     
+    <string-array name="prefs_output_accuracy_values">
+        <item>none</item>
+        <item>wpt_name</item>
+        <item>wpt_cmt</item>
+    </string-array>
+ 
+</resources>

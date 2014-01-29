@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>    
+  
+<!--   
+__________________________________________________________________________________________________________________________________________________ 
+                | 
+  File name     |       home.xml 
+________________|_________________________________________________________________________________________________________________________________ 
+                |    
+                |       This file is part of WanderWiki project. 
+  Licence       | 
+                |       WanderWiki project is free software: you can redistribute it and/or modify 
+                |       it under the terms of the GNU General Public License as published by 
+                |       the Free Software Foundation, either version 3 of the License, or 
+                |       (at your option) any later version. 
+                | 
+                |       WanderWiki is distributed in the hope that it will be useful, 
+                |       but WITHOUT ANY WARRANTY; without even the implied warranty of 
+                |       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+                |       GNU General Public License for more details. 
+                | 
+                |       You should have received a copy of the GNU General Public License 
+                |       along with WanderWiki.  If not, see <http://www.gnu.org/licenses/>. 
+________________|___________________________________________________________________________________________________________________________ 
+                | 
+  Created by    |       Florent 
+________________|_________________________________________________________________________________________________________ 
+                | 
+  Comments      |       The landscape and the portrait mode are different for this layout (because of the values defined for the heights). 
+                |       See the layout/home.xml   
+________________|__________________________________________________________________________________________________________________________ 
+                                    |                           |                           | 
+        Modification name           |   Date of the modfication |       Modified by         |       Comments 
+____________________________________|___________________________|___________________________|________________________________________________ 
+                                    |                           |                           | 
+                                    |                           |                           | 
+____________________________________|___________________________|___________________________|________________________________________________ 
+  
+ -->
+  
+  
+       
+<!--  Layout_width, layout_height of the buttons are defined in values/style.xml -->
+        
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    tools:context="ab.android.wanderwiki.activity.Home" >    
+        
+    <LinearLayout
+        android:id="@+id/recherche_creation"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp" >    
+        
+        <Button
+            android:id="@+id/search_button"
+            style="@style/home_big_button"
+            android:layout_weight="50"
+            android:layout_marginRight="4dp"
+            android:text="@string/search_button" />    
+                
+                
+        <Button
+            android:id="@+id/creation_button"
+            style="@style/home_big_button"
+            android:layout_weight="50"
+            android:layout_marginLeft="4dp"
+            android:text="@string/creation_button" />    
+        
+    </LinearLayout>    
+        
+    <!-- Linearlayout is used here to have well-proportionned  buttons -->
+          
+      <Button
+        android:id="@+id/tracks_button"
+        style="@style/home_big_button"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/recherche_creation"
+        android:text="@string/downloaded_tracks_button" />    
+       
+                
+</RelativeLayout>

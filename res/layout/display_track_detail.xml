@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?> 
+  
+<!--   
+__________________________________________________________________________________________________________________________________________________ 
+                | 
+  File name     |       display_track_detail.xml 
+________________|_________________________________________________________________________________________________________________________________ 
+                |    
+                |       This file is part of WanderWiki project. 
+  Licence       | 
+                |       WanderWiki project is free software: you can redistribute it and/or modify 
+                |       it under the terms of the GNU General Public License as published by 
+                |       the Free Software Foundation, either version 3 of the License, or 
+                |       (at your option) any later version. 
+                | 
+                |       WanderWiki is distributed in the hope that it will be useful, 
+                |       but WITHOUT ANY WARRANTY; without even the implied warranty of 
+                |       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+                |       GNU General Public License for more details. 
+                | 
+                |       You should have received a copy of the GNU General Public License 
+                |       along with WanderWiki.  If not, see <http://www.gnu.org/licenses/>. 
+________________|___________________________________________________________________________________________________________________________ 
+                | 
+  Created by    |       Florent 
+________________|_________________________________________________________________________________________________________ 
+                | 
+  Comments      |       Styles (textsize, width, height for textviews are defined in style.xml 
+                |        
+                |        
+________________|__________________________________________________________________________________________________________________________ 
+                                    |                           |                           | 
+        Modification name           |   Date of the modfication |       Modified by         |       Comments 
+____________________________________|___________________________|___________________________|________________________________________________ 
+                                    |                           |                           | 
+                                    |                           |                           | 
+____________________________________|___________________________|___________________________|________________________________________________ 
+  
+ -->
+  
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="12dp" >  
+    
+     
+  
+            
+    <TextView
+        android:id="@+id/displaytrackdetail_trackNameView"
+        style="@style/track_details_textview"
+        android:layout_alignParentTop="true"
+        android:text="@string/track_name" />  
+    
+    <TextView
+        android:id="@+id/displaytrackdetail_authorView"
+        style="@style/track_details_textview"
+        android:layout_below="@id/displaytrackdetail_trackNameView"
+        android:text="@string/author" />  
+    
+    <TextView
+        android:id="@+id/displaytrackdetail_dateView"
+        style="@style/track_details_textview"
+        android:layout_below="@id/displaytrackdetail_authorView"
+        android:text="@string/date" />  
+        
+    <TextView
+        android:id="@+id/displaytrackdetail_lengthView"
+        style="@style/track_details_textview"
+        android:layout_below="@id/displaytrackdetail_dateView"
+        android:text="@string/length" />  
+        
+    <TextView
+        android:id="@+id/displaytrackdetail_descriptionView"
+        style="@style/track_details_textview"
+        android:layout_below="@id/displaytrackdetail_lengthView"
+        android:layout_marginBottom="70dp"
+        android:text="@string/description" />
+        
+    <LinearLayout
+        android:id="@+id/display_upload_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="4dp"
+        android:layout_below="@id/displaytrackdetail_descriptionView">   
+        
+        <Button
+            android:id="@+id/displaytrackdetail_display_button"
+            style="@style/home_big_button"
+            android:layout_marginRight="4dp"
+            android:layout_weight="50"
+            android:layout_height="150dp"
+            android:text="@string/display" />  
+            
+        <Button
+            android:id="@+id/displaytrackdetail_upload_button"
+            style="@style/home_big_button"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="50"
+            android:text="@string/upload" />  
+    
+    </LinearLayout>  
+    
+</RelativeLayout>

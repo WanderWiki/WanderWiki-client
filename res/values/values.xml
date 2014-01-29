@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<!--
+__________________________________________________________________________________________________________________________________________________
+                |
+  File name     |       values.xml
+________________|_________________________________________________________________________________________________________________________________
+                |   
+                |       This file is part of WanderWiki project.
+  Licence       |
+                |       WanderWiki project is free software: you can redistribute it and/or modify
+                |       it under the terms of the GNU General Public License as published by
+                |       the Free Software Foundation, either version 3 of the License, or
+                |       (at your option) any later version.
+                |
+                |       WanderWiki is distributed in the hope that it will be useful,
+                |       but WITHOUT ANY WARRANTY; without even the implied warranty of
+                |       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                |       GNU General Public License for more details.
+                |
+                |       You should have received a copy of the GNU General Public License
+                |       along with WanderWiki.  If not, see <http://www.gnu.org/licenses/>.
+________________|___________________________________________________________________________________________________________________________
+                |
+  Created by    |       OSMTracker
+________________|_________________________________________________________________________________________________________
+                |
+  Comments      |       
+                |       
+________________|__________________________________________________________________________________________________________________________
+                                    |                           |                           |
+        Modification name           |   Date of the modfication |       Modified by         |       Comments
+____________________________________|___________________________|___________________________|________________________________________________
+                                    |                           |                           |
+    Link and contact for WanderWiki |   12/13                   |       Florent             |
+____________________________________|___________________________|___________________________|________________________________________________
+ 
+-->
+<resources>
+ 
+    <string name="about_link"><a href="https://fr.wikipedia.org/wiki/Utilisateur:FatJagm/Notre_Projet_de_G%C3%A9olocalisation">Page Wikipédia du projet/</a></string>
+    <string name="about_contact_link"><a href="projet-wikimedia-geoloc@googlegroups.com"></a></string>
+      
+</resources>

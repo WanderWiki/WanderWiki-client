@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>     
+  
+<!-- 
+__________________________________________________________________________________________________________________________________________________ 
+                | 
+  File name     |       values/style.xml 
+________________|_________________________________________________________________________________________________________________________________ 
+                |    
+                |       This file is part of WanderWiki project. 
+  Licence       | 
+                |       WanderWiki project is free software: you can redistribute it and/or modify 
+                |       it under the terms of the GNU General Public License as published by 
+                |       the Free Software Foundation, either version 3 of the License, or 
+                |       (at your option) any later version. 
+                | 
+                |       WanderWiki is distributed in the hope that it will be useful, 
+                |       but WITHOUT ANY WARRANTY; without even the implied warranty of 
+                |       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+                |       GNU General Public License for more details. 
+                | 
+                |       You should have received a copy of the GNU General Public License 
+                |       along with WanderWiki.  If not, see <http://www.gnu.org/licenses/>. 
+________________|___________________________________________________________________________________________________________________________ 
+                | 
+  Created by    |       Florent 
+________________|_________________________________________________________________________________________________________ 
+                | 
+  Comments      |        
+                |        
+________________|__________________________________________________________________________________________________________________________ 
+                                    |                           |                           | 
+        Modification name           |   Date of the modfication |       Modified by         |       Comments 
+____________________________________|___________________________|___________________________|________________________________________________ 
+                                    |                           |                           | 
+                                    |                           |                           | 
+____________________________________|___________________________|___________________________|________________________________________________ 
+  
+-->
+<resources
+xmlns:android="http://schemas.android.com/apk/res/android">     
+             
+    <!--  Style "home.xml" Buttons -->
+          
+    <style name="home_big_button" parent="@android:style/Widget.Button">     
+        <item name="android:textSize">20sp</item>     
+        <item name="android:background">@drawable/home_button</item>     
+        <item name="android:layout_width">fill_parent</item>     
+        <item name="android:layout_height">fill_parent</item>     
+    </style>     
+  
+         
+    <!-- "Display_track_detail.xml" text views -->
+            
+    <style name="track_details_textview">    
+        <item name="android:textSize">20sp</item>    
+        <item name="android:textColor">@color/white</item>    
+        <item name="android:layout_width">fill_parent</item>    
+        <item name="android:layout_height">wrap_content</item>    
+        <item name="android:layout_marginBottom">14dp</item>    
+    </style>    
+              
+    <style name="track_details_textview_land" parent="@style/track_details_textview">    
+        <item name="android:textSize">18sp</item>    
+        <item name="android:layout_marginBottom">10dp</item>    
+    </style>    
+          
+    <!--  advanced_research.xml -->
+          
+    <style name="advanced_research_textview">   
+        <item name="android:layout_width">wrap_content</item>   
+        <item name="android:layout_height">wrap_content</item>   
+        <item name="android:textSize">20sp</item>   
+        <item name="android:textColor">@color/white</item>   
+        <item name="android:layout_marginRight">8dp</item>   
+    </style>   
+          
+    <style name="advanced_research_edittext">   
+        <item name="android:layout_width">fill_parent</item>   
+        <item name="android:layout_height">wrap_content</item>   
+        <item name="android:inputType">text</item>         
+        <item name="android:hint"></item>       
+        <item name="android:layout_marginTop">15dp</item>   
+    </style>   
+          
+    <style name="advanced_research_textview_land" parent="@style/advanced_research_textview">   
+        <item name="android:textSize">17sp</item>   
+        <item name="android:layout_marginRight">6dp</item>   
+    </style>   
+          
+    <style name="advanced_research_edittext_land" parent="@style/advanced_research_edittext">   
+        <item name="android:layout_marginTop">10dp</item>   
+        <item name="android:textSize">17sp</item>   
+    </style>   
+          
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
+ 
+    <org.osmdroid.views.MapView
+        android:id="@+id/displaytrackmap_osmView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+     <ImageView
+         android:id="@+id/displaytrackmap_refresh"
+         android:layout_width="32dp"
+         android:layout_height="32dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="14dp"
+         android:contentDescription="@string/acc.zoom_in"
+         android:src="@drawable/refresh"
+         android:visibility="invisible" />
+
+     <ImageView
+         android:id="@+id/displaytrackmap_voiceRecord"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/displaytrackmap_refresh"
+         android:contentDescription="@string/acc.zoom_in"
+         android:src="@drawable/voice_32x32"
+         android:visibility ="invisible"  />
+
+     <ImageView
+         android:id="@+id/displaytrackmap_stillImage"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/displaytrackmap_voiceRecord"
+         android:contentDescription="@string/acc.zoom_in"
+         android:src="@drawable/camera_32x32"
+         android:visibility ="invisible" />
+
+     <ImageView
+         android:id="@+id/displaytrackmap_textNote"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/displaytrackmap_stillImage"
+         android:contentDescription="@string/acc.zoom_in"
+         android:src="@drawable/text_32x32"
+         android:visibility="invisible" />
+     
+     <ImageView
+         android:id="@+id/displaytrackmap_imgZoomOut"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/displaytrackmap_textNote"
+         android:contentDescription="@string/acc.zoom_in"
+         android:src="@drawable/zoom_out" />
+     <ImageView
+         android:id="@+id/displaytrackmap_imgZoomIn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/displaytrackmap_imgZoomOut"
+         android:contentDescription="@string/acc.zoom_in"
+         android:src="@drawable/zoom_in" />
+     <ImageView
+         android:id="@+id/displaytrackmap_out"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/displaytrackmap_imgZoomIn"
+         android:contentDescription="out"
+         android:src="@drawable/out" />
+
+
+           <ImageView
+         android:id="@+id/displaytrackmap_position"
+         android:layout_width="32dp"
+         android:layout_height="32dp"
+         android:layout_toLeftOf="@id/displaytrackmap_refresh"
+         android:layout_marginRight="14dp"
+         android:contentDescription="@string/acc.zoom_in"
+         android:src="@drawable/icon_position"/>  
+          <ImageView
+         android:id="@+id/displaytrackmap_stop_start_tracking"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/displaytrackmap_out"
+         android:contentDescription="stop_start"
+         android:src="@drawable/stop_tracking"
+         android:visibility="invisible" />
+</RelativeLayout>
