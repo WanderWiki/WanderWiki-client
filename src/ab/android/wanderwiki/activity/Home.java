@@ -89,10 +89,8 @@ public class Home extends Activity {
 			{
 			    final EditText pseudonymInput = (EditText) promptView2.findViewById(R.id.pseudonymInput);
 			     pseudonym = (pseudonymInput.getText()).toString();
-					 // gmail=(gmailInput.getText()).toString();
 				     final ContentValues values = new ContentValues();
 				     values.put(Schema.COL_PSEUDONYM, pseudonym);
-			         Date startDate = new Date();
 			   	     values.put(Schema.COL_GMAIL, gmail);
 						if (resultAddUser.contains("success"))
 						{
@@ -319,7 +317,7 @@ public class Home extends Activity {
 				        allColumns, null, null,
 				        null, null, null);
 			 cursor.moveToFirst();
-	         if (cursor.getCount()==0){
+	         if (false && cursor.getCount()==0){
 
 	        	waitingDialog1 = ProgressDialog.show(Home.this, "",  getResources().getString(R.string.checking_gmail), true);
 	  			alertDialogBuilder.setView(promptView);
@@ -335,7 +333,7 @@ public class Home extends Activity {
 	 	
 	         }
 	         else {
-	          authorName = cursor.getString(cursor.getColumnIndex(Schema.COL_PSEUDONYM));
+	          authorName = "test";//cursor.getString(cursor.getColumnIndex(Schema.COL_PSEUDONYM));
 	         }
 	         cursor.close();
 	}
