@@ -99,7 +99,7 @@ public class DownloadTrack extends Activity {
 			trackFileName = extras.getString("TRACK_ID_IN_DATABASE")+".gpx";
 			}
 		dataHelper= new DataHelper(getApplicationContext());
-		trackStorageDirectory = Environment.getExternalStorageDirectory().getAbsolutePath() + "/wanderwiki/download_tracks/" + trackFileName;
+		trackStorageDirectory = Environment.getExternalStorageDirectory().getAbsolutePath() + "/wikijourney/download_tracks/" + trackFileName;
 		intent = new Intent(DownloadTrack.this, SearchTrack.class);
 	}
 	
@@ -123,7 +123,7 @@ public class DownloadTrack extends Activity {
 						          new Thread(new Runnable() {
 						              public void run() {                
 						       			try {
-											downloadTaskResult = (String) downloadTask.execute("http://tools.wmflabs.org/wanderwiki/tracks/"+trackFileName).get();
+											downloadTaskResult = (String) downloadTask.execute("http://tools.wmflabs.org/wikijourney/tracks/"+trackFileName).get();
 										} catch (InterruptedException e) {
 											// TODO Auto-generated catch block
 											e.printStackTrace();
@@ -254,7 +254,7 @@ public class DownloadTrack extends Activity {
 
 			    public DownloadTrackTask(Context context,String fileName) {
 			        this.context = context;
-			        trackStorageDirectory= Environment.getExternalStorageDirectory().getAbsolutePath() + "/wanderwiki/download_tracks/" + fileName;
+			        trackStorageDirectory= Environment.getExternalStorageDirectory().getAbsolutePath() + "/wikijourney/download_tracks/" + fileName;
 			    }
 
 			    @Override

@@ -157,7 +157,7 @@ public class Home extends Activity {
 	    	new Thread(new Runnable() {
 	    		@Override
 	    		public void run(){
-			         String resultUrl = "http://tools.wmflabs.org/wanderwiki/idUser.php?email_adr="+gmail;
+			         String resultUrl = "http://tools.wmflabs.org/wikijourney/idUser.php?email_adr="+gmail;
 				     InputStream is;
 			         StringBuilder sb;
 		            try{
@@ -194,7 +194,7 @@ public class Home extends Activity {
 			 new Thread(new Runnable() {
 		     @Override
 	    		public void run(){
-				    String resultUrl =  "http://tools.wmflabs.org/wanderwiki/createUser.php?email_adr="+gmail+"&pseudo="+pseudonym+"&security="+"0";
+				    String resultUrl =  "http://tools.wmflabs.org/wikijourney/createUser.php?email_adr="+gmail+"&pseudo="+pseudonym+"&security="+"0";
 					InputStream is;
 			        StringBuilder sb;
 		            try{
@@ -296,7 +296,7 @@ public class Home extends Activity {
      	 if (!folder.exists()) {
      	     success = folder.mkdir();
      	     
-         	 File folder2 = new File(Environment.getExternalStorageDirectory() + "/wanderwiki/download_tracks");
+         	 File folder2 = new File(Environment.getExternalStorageDirectory() + "/wikijourney/download_tracks");
          	 boolean success2 = true;
          	 if (!folder2.exists()) {
          	     success2 = folder2.mkdir();
@@ -317,7 +317,7 @@ public class Home extends Activity {
 				        allColumns, null, null,
 				        null, null, null);
 			 cursor.moveToFirst();
-	         if (false && cursor.getCount()==0){
+	         if (cursor.getCount()==0){
 
 	        	waitingDialog1 = ProgressDialog.show(Home.this, "",  getResources().getString(R.string.checking_gmail), true);
 	  			alertDialogBuilder.setView(promptView);
@@ -333,7 +333,7 @@ public class Home extends Activity {
 	 	
 	         }
 	         else {
-	          authorName = "test";//cursor.getString(cursor.getColumnIndex(Schema.COL_PSEUDONYM));
+	           authorName = cursor.getString(cursor.getColumnIndex(Schema.COL_PSEUDONYM));
 	         }
 	         cursor.close();
 	}

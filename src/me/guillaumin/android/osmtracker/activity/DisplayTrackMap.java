@@ -731,7 +731,7 @@ public class DisplayTrackMap extends Activity implements OpenStreetMapContributo
 			new Thread(new Runnable() {
 	   	    		@Override
 	   	    		public void run(){
-	   			     String resultUrl = "http://tools.wmflabs.org/wanderwiki/getArticles.php"+"?lat_sup="+supLat+"&lon_sup="+supLon+"&lat_inf="+infLat+"&lon_inf="+infLon+"&lang="+Locale.getDefault().getLanguage()+"&maxRows=10";
+	   			     String resultUrl = "http://tools.wmflabs.org/wikijourney/getArticles.php"+"?lat_sup="+supLat+"&lon_sup="+supLon+"&lat_inf="+infLat+"&lon_inf="+infLon+"&lang="+Locale.getDefault().getLanguage()+"&maxRows=10";
 	   			     InputStream is = null;
 	   			     StringBuilder sb=null;
 	   			         try{
@@ -1071,7 +1071,7 @@ public void setVoteUrl(int x)
 			String traceId =String.valueOf(cursor2.getLong(cursor2.getColumnIndex(Schema.COL_DATABASE_ID)));
 			cursor2.close();
 	
-	     	   resultVoteUrl ="http://tools.wmflabs.org/wanderwiki/vote.php?voteType="+String.valueOf(x)+"&traceid="+traceId+"&userid="+ idAuthor;
+	     	   resultVoteUrl ="http://tools.wmflabs.org/wikijourney/vote.php?voteType="+String.valueOf(x)+"&traceid="+traceId+"&userid="+ idAuthor;
 			
 			
 }

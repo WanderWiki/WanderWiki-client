@@ -208,7 +208,7 @@ public abstract class ExportTrackTask  extends AsyncTask<Void, Integer, Boolean>
 			File trackGPXExportDirectory = getExportDirectory(startDate);
 			String filenameBase = buildGPXFilename(c);
 			c.close();
-			File directory = new File(Environment.getExternalStorageDirectory()+File.separator+ "/wanderwiki/download_tracks/"+filenameBase);
+			File directory = new File(Environment.getExternalStorageDirectory()+File.separator+ "/wikijourney/download_tracks/"+filenameBase);
 			directory.mkdirs();
 			trackFile = new File(directory, filenameBase+DataHelper.EXTENSION_GPX);
 			

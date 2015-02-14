@@ -81,7 +81,7 @@ public class UploadTrack extends Activity {
 		
 		
 		exportToStorage();
-        upLoadServerUri = "http://tools.wmflabs.org/wanderwiki/uploadTrack.php";
+        upLoadServerUri = "http://tools.wmflabs.org/wikijourney/uploadTrack.php";
                 dialog = ProgressDialog.show(UploadTrack.this, "", "Uploading file...", true);
                 new Thread(new Runnable() {
                     public void run() {
@@ -112,7 +112,7 @@ public class UploadTrack extends Activity {
     	exportToStorageTask = new ExportToStorageTask(this, trackId);
     	exportToStorageTask.execute();
     	try{
-    	uploadFilePath=Environment.getExternalStorageDirectory().getAbsolutePath() + "/wanderwiki/download_tracks/"+filenameBase;
+    	uploadFilePath=Environment.getExternalStorageDirectory().getAbsolutePath() + "/wikijourney/download_tracks/"+filenameBase;
     	uploadFileName=filenameBase+DataHelper.EXTENSION_GPX;
     	}
     	catch(Exception e)

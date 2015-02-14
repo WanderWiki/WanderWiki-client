@@ -49,7 +49,7 @@ public class SearchTrackResults extends Activity{
     String lengthMin=""; 
     String durationMax=""; 
     String durationMin=""; 
-    String resultUrl ="http://tools.wmflabs.org/wanderwiki/"; 
+    String resultUrl ="http://tools.wmflabs.org/wikijourney/"; 
     Double lat; 
     Double lon; 
     private ProgressDialog waitingDialog1; 
@@ -142,7 +142,7 @@ public class SearchTrackResults extends Activity{
          //   durationMin= extras.getString("DURATION_MIN"); 
         } 
         //_getLocation(); 
-		resultUrl = "http://tools.wmflabs.org/wanderwiki/search.php"
+		resultUrl = "http://tools.wmflabs.org/wikijourney/search.php"
 		+"?content=" + keyword 
 		+"&limdist="+lengthMax
 		+"&sort=1"
