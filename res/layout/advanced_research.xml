@@ -28,7 +28,7 @@ ________________|_______________________________________________________________
                 |       For now, this layout is not used, but it will be when the function of advanced will be done. 
 ________________|__________________________________________________________________________________________________________________________ 
                                     |                           |                           | 
-        Modification name           |   Date of the modfication |       Modified by         |       Comments 
+        Modification name           |  Date of the modification |       Modified by         |       Comments 
 ____________________________________|___________________________|___________________________|________________________________________________ 
                                     |                           |                           | 
                                     |                           |                           | 
@@ -66,9 +66,9 @@ ____________________________________|___________________________|_______________
         android:layout_below="@id/search_creator"
         android:layout_toRightOf="@id/keywords"/>      
             
-     <TextView
+    <EditText
         android:id="@+id/length"
-        style="@style/advanced_research_textview"
+        style="@style/advanced_research_edittext"
         android:layout_alignBottom="@+id/search_track_length_min"
         android:text="@string/length_min"/>     
     
@@ -82,9 +82,9 @@ ____________________________________|___________________________|_______________
         android:ems="2"
         android:inputType="number" />
             
-    <TextView
+    <EditText
         android:id="@+id/length_max"
-        style="@style/advanced_research_textview"
+        style="@style/advanced_research_edittext"
         android:layout_alignBottom="@+id/search_track_length_min"
         android:layout_toRightOf="@id/search_track_length_min"
         android:text="@string/max"/>     
@@ -100,7 +100,7 @@ ____________________________________|___________________________|_______________
         android:inputType="number"
         android:digits="1234567890"/>      
           
-     <TextView
+    <TextView
         android:id="@+id/duration"
         style="@style/advanced_research_textview"
         android:layout_alignBottom="@+id/search_track_duration_min"
@@ -117,28 +117,27 @@ ____________________________________|___________________________|_______________
         android:inputType="number" />
             
     <TextView
-        android:id="@+id/search_track_duration_max"
+        android:id="@+id/duration_max"
         style="@style/advanced_research_textview"
         android:layout_alignBottom="@+id/search_track_duration_min"
         android:layout_toRightOf="@id/search_track_duration_min"
         android:text="@string/max"/>     
             
     <EditText
-        android:id="@+id/max_d"
+        android:id="@+id/search_track_duration_max"
         style="@style/advanced_research_edittext"
         android:layout_width="wrap_content"
         android:layout_alignBottom="@id/search_track_duration_min"
-        android:layout_toRightOf="@id/search_track_duration_max"
+        android:layout_toRightOf="@id/duration_max"
         android:layout_alignParentRight="true"
         android:ems="2"        
         android:inputType="number"
-        android:digits="1234567890"/>       
-      
+        android:digits="1234567890"/>
             
     <CheckBox
         android:id="@+id/start_my_position"
         style="@style/advanced_research_textview"
-        android:layout_below="@id/max_d"
+        android:layout_below="@id/duration_max"
         android:text="@string/start_my_position"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>   

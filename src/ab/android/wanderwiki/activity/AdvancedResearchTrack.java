@@ -24,9 +24,9 @@ public class AdvancedResearchTrack extends Activity {
         final EditText KeywordEditText = (EditText) findViewById(R.id.trackName); 
         final EditText DistanceMaxEditText = (EditText) findViewById(R.id.search_track_length_max); 
         final EditText DistanceMinEditText = (EditText) findViewById(R.id.search_track_length_min); 
-        final EditText DurationMaxEditText = (EditText) findViewById(R.id.search_track_duration_min); 
-        final EditText DurationMinEditText = (EditText) findViewById(R.id.search_track_duration_max); 
-        //Référence à définir dans le layout 
+        final EditText DurationMaxEditText = (EditText) findViewById(R.id.search_track_duration_max); 
+        final EditText DurationMinEditText = (EditText) findViewById(R.id.search_track_duration_min); 
+        //RÃ©fÃ©rence Ã  dÃ©finir dans le layout 
           SearchButton.setOnClickListener(new OnClickListener() { 
                       
           @Override
